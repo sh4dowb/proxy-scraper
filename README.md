@@ -1,4 +1,4 @@
-# proxy-scraper-list
+# Proxy Scraper & Checker & Free List
 
 Easy proxy scraper & checker, and publicly available list
 
