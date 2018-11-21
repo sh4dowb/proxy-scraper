@@ -1,8 +1,10 @@
+
+
 # Proxy Scraper & Checker & Free List
 
 Easy proxy scraper & checker, and publicly available list
 
-`
+```
 usage: proxy-scraper.py [-h] [-c] -o OUTPUT [-t THREADS] [--timeout TIMEOUT]
                         [--http] [--check-with-website CHECK_WITH_WEBSITE]
                         [--country] [--connection-time] [-f] [-i]
@@ -25,13 +27,13 @@ optional arguments:
                         Force flush the output file every time
   -i, --extra-information
                         Print last updated time, and configuration description
+```
 
-`
 
 This runs on my server:
-`
+```
 python3 /root/proxy-scraper.py --check -t 300 --timeout 5 --check-with-website httpbin.org/ip --country --connection-time --extra-information --output /home/admin/web/cagriari.com/public_html/fresh_proxy.txt 
-`
+```
 
 <br><br>
 Hourly updated & checked proxy list: https://cagriari.com/fresh_proxy.txt
