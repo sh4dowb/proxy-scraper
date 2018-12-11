@@ -1,8 +1,8 @@
 
 
-# Proxy Scraper & Checker & ~Free List~
+# Proxy Scraper & Checker & Free List
 
-Easy proxy scraper & checker, and ~publicly available list~
+Easy proxy scraper & checker, and publicly available list
 
 ```
 usage: proxy-scraper.py [-h] [-c] -o OUTPUT [-t THREADS] [--timeout TIMEOUT]
@@ -30,13 +30,14 @@ optional arguments:
 ```
 
 
-~This runs on my server:~
+This runs on my server:
 ```
 python3 /root/proxy-scraper.py --check -t 300 --timeout 5 --check-with-website httpbin.org/ip --country --connection-time --extra-information --output /home/admin/web/cagriari.com/public_html/fresh_proxy.txt 
 ```
 
 <br><br>
-~Hourly updated & checked proxy list: https://cagriari.com/fresh_proxy.txt~
-I'm no longer running it on my server as it doesn't cover the server costs.
+~Hourly~ Daily updated & checked proxy list: https://cagriari.com/fresh_proxy.txt
 
-_*actually it takes about +10 mins for checking_
+~I'm no longer running it on my server as it doesn't cover the server costs.~
+
+I changed the interval to every 6 hours instead of hourly to decrease server load. I'M POOR PLZ DONATE 4 FREE PROXY: 1MwsGU57r1bMbdSTv9i9K9XQEg37xfSM2
