@@ -47,16 +47,11 @@ proxysources = [
 	["https://raw.githubusercontent.com/opsxcq/proxy-list/master/list.txt", "%ip%:%port%"],
 	["https://www.us-proxy.org/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://free-proxy-list.net/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
-	["https://proxyscrape.com/proxies/HTTP_Working_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/Socks4_Working_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/Socks5_Working_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/HTTP_Transparent_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/HTTP_Anonymous_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/HTTP_Elite_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/HTTP_5000ms_Timeout_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/Socks5_5000ms_Timeout_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/Socks4_5000ms_Timeout_Proxies.txt", "%ip%:%port%"],
-	["https://proxyscrape.com/proxies/HTTP_SSL_Proxies_5000ms_Timeout_Proxies.txt", "%ip%:%port%"]
+	["https://www.sslproxies.org/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
+	["https://www.proxy-list.download/api/v0/get?l=en&t=https", '"IP": "%ip%", "PORT": "%port%",'],
+	["https://proxyscrape.com/api?request=getproxies&proxytype=http&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
+	["https://proxyscrape.com/api?request=getproxies&proxytype=socks4&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
+	["https://proxyscrape.com/api?request=getproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"]
 ]
 
 sourcethreads = []
