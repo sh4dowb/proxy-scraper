@@ -46,6 +46,8 @@ def fetchAndParseProxies(url, custom_regex):
 
 
 proxysources = [
+	["http://spys.me/proxy.txt","%ip%:%port% "],
+	["http://www.httptunnel.ge/ProxyListForFree.aspx"," target=\"_new\">%ip%:%port%</a>"],
 	["https://raw.githubusercontent.com/fate0/proxylist/master/proxy.list", '"host": "%ip%".*?"country": "(.*?){2}",.*?"port": %port%'],
 	["https://raw.githubusercontent.com/a2u/free-proxy-list/master/free-proxy-list.txt", "%ip%:%port%"],
 	["https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list.txt", '%ip%:%port% (.*?){2}-.-S \\+'],
