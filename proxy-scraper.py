@@ -37,12 +37,15 @@ proxies = []
 
 def fetchAndParseProxies(url, custom_regex):
 	global proxies
+	n = 0
 	proxylist = requests.get(url, timeout=5).text
 	proxylist = proxylist.replace('null', '"N/A"')
 	custom_regex = custom_regex.replace('%ip%', '([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})')
 	custom_regex = custom_regex.replace('%port%', '([0-9]{1,5})')
 	for proxy in re.findall(re.compile(custom_regex), proxylist):
 		proxies.append(proxy[0] + ":" + proxy[1])
+		n += 1
+	sys.stdout.write("{0: >5} proxies fetched from {1}\n".format(n, url))
 
 
 proxysources = [
@@ -71,7 +74,7 @@ for source in proxysources:
 for t in sourcethreads:
 	t.join()
 
-print("{} proxies fetched".format(len(proxies)))
+print("{0: >5} proxies fetched total.".format(len(proxies)))
 proxies_ok = []
 
 f = open(parserx.output, "w")
@@ -128,7 +131,7 @@ if parserx.check:
 	for t in threadsl:
 		t.join()
 
-	sys.stdout.write("\rCompleted - Alive: {} - Dead: {}\n".format(alive, dead))
+	sys.stdout.write("\rCompleted - Alive: {} - Dead: {}         \n".format(alive, dead))
 	print("")
 else:
 	for proxy in proxies:
