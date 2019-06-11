@@ -129,6 +129,6 @@ if parserx.check:
 	print("")
 else:
 	for proxy in proxies:
-		f.write("{}\n".format(proxy[0]))
+		f.write("{}\n".format(proxy))
 
 f.close()
