@@ -1,7 +1,12 @@
-import requests, sys, re, queue, threading, traceback, requests, datetime, time, argparse
-if sys.version_info[0] != 3:
+#!/usr/bin/python3
+
+import sys
+
+if sys.version_info[0] < 3:
 	print("This script needs Python 3")
 	exit()
+
+import requests, re, queue, threading, traceback, requests, datetime, time, argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--check', help="Check the scraped proxies", action='store_true')
