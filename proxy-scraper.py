@@ -74,7 +74,9 @@ for source in proxysources:
 for t in sourcethreads:
 	t.join()
 
-print("{0: >5} proxies fetched total.".format(len(proxies)))
+proxies_unique = list(set(proxies))
+print("{0: >5} proxies fetched total, {1} unique.".format(len(proxies), len(proxies_unique)))
+proxies = proxies_unique
 proxies_ok = []
 
 f = open(parserx.output, "w")
