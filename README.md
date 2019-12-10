@@ -40,4 +40,4 @@ python3 /root/proxy-scraper.py --check -t 300 --timeout 5 --check-with-website h
 
 ~I'm no longer running it on my server as it doesn't cover the server costs.~
 
-I changed the interval to every 6 hours instead of hourly to decrease server load. I'M POOR PLZ DONATE 4 FREE PROXY: 1MwsGU57r1bMbdSTv9i9K9XQEg37xfSM2
+I changed the interval to every 6 hours instead of hourly to decrease server load.
