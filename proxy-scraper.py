@@ -60,9 +60,9 @@ proxysources = [
 	["https://free-proxy-list.net/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://www.sslproxies.org/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://www.proxy-list.download/api/v0/get?l=en&t=https", '"IP": "%ip%", "PORT": "%port%",'],
-	["https://proxyscrape.com/api?request=getproxies&proxytype=http&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
-	["https://proxyscrape.com/api?request=getproxies&proxytype=socks4&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
-	["https://proxyscrape.com/api?request=getproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"]
+	["https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
+	["https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
+	["https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"]
 ]
 
 sourcethreads = []
