@@ -53,16 +53,23 @@ proxysources = [
 	["http://www.httptunnel.ge/ProxyListForFree.aspx"," target=\"_new\">%ip%:%port%</a>"],
 	["https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.json", "\"ip\":\"%ip%\",\"port\":\"%port%\","],
 	["https://raw.githubusercontent.com/fate0/proxylist/master/proxy.list", '"host": "%ip%".*?"country": "(.*?){2}",.*?"port": %port%'],
-	["https://raw.githubusercontent.com/a2u/free-proxy-list/master/free-proxy-list.txt", "%ip%:%port%"],
 	["https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list.txt", '%ip%:%port% (.*?){2}-.-S \\+'],
-	["https://raw.githubusercontent.com/opsxcq/proxy-list/master/list.txt", "%ip%:%port%"],
+	["https://raw.githubusercontent.com/opsxcq/proxy-list/master/list.txt", '%ip%", "type": "http", "port": %port%'],
 	["https://www.us-proxy.org/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://free-proxy-list.net/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://www.sslproxies.org/", "<tr><td>%ip%<\\/td><td>%port%<\\/td><td>(.*?){2}<\\/td><td class='hm'>.*?<\\/td><td>.*?<\\/td><td class='hm'>.*?<\\/td><td class='hx'>(.*?)<\\/td><td class='hm'>.*?<\\/td><\\/tr>"],
 	["https://www.proxy-list.download/api/v0/get?l=en&t=https", '"IP": "%ip%", "PORT": "%port%",'],
-	["https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
-	["https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
-	["https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"]
+	["https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=6000&country=all&ssl=yes&anonymity=all", "%ip%:%port%"],
+	["https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt", "%ip%:%port%"],
+	["https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt", "%ip%:%port%"],
+	["https://proxylist.icu/", "<td>%ip%:%port%</td><td>http<"],
+	["https://proxylist.icu/proxy/1", "<td>%ip%:%port%</td><td>http<"],
+	["https://proxylist.icu/proxy/2", "<td>%ip%:%port%</td><td>http<"],
+	["https://proxylist.icu/proxy/3", "<td>%ip%:%port%</td><td>http<"],
+	["https://proxylist.icu/proxy/4", "<td>%ip%:%port%</td><td>http<"],
+	["https://proxylist.icu/proxy/5", "<td>%ip%:%port%</td><td>http<"],
+	["https://www.hide-my-ip.com/proxylist.shtml", '"i":"%ip%","p":"%port%",'],
+	["https://raw.githubusercontent.com/scidam/proxy-list/master/proxy.json", '"ip": "%ip%",\n.*?"port": "%port%",']
 ]
 
 sourcethreads = []
